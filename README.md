@@ -1,7 +1,7 @@
 # Hey, I'm Jenish👋
 
-<code><a href="https://twitter.com/jenishngl"><img height="20" alt="twitter" src="https://raw.githubusercontent.com/github/explore/13295c57999765ac9ffa3281942a72ab08b79de2/topics/twitter/twitter.png"></a></code>
-<code><a href="https://www.linkedin.com/in/jenish-jerome/"><img height="20" alt="linkedin" src="https://avatars.githubusercontent.com/u/357098?s=200&v=4"></a></code>
+<code><a target="_blank" href="https://twitter.com/jenishngl"><img height="20" alt="twitter" src="https://raw.githubusercontent.com/github/explore/13295c57999765ac9ffa3281942a72ab08b79de2/topics/twitter/twitter.png"></a></code>
+<code><a target="_blank" href="https://www.linkedin.com/in/jenish-jerome/"><img height="20" alt="linkedin" src="https://avatars.githubusercontent.com/u/357098?s=200&v=4"></a></code>
 
 ## About me
 
