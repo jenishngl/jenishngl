@@ -1,0 +1,36 @@
+name: Generate contribution graph
+
+on:
+  # run automatically every 24 hours
+  schedule:
+    - cron: '0 */24 * * *'
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  # run on every push on the main branch
+  push:
+    branches:
+    - main
+
+jobs:
+  Generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          repository: ${{ github.event.inputs.repository }}
+          ref: ${{ github.event.inputs.ref }}
+      - name: Gen contributions graph snake in format GIF
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+      - name: Save
+        uses: mikeal/publish-to-github-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            BRANCH_NAME: 'main'
