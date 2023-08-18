@@ -29,6 +29,8 @@ jobs:
           outputs: |
             assets/github-snake.svg
             assets/github-snake-dark.svg?palette=github-dark
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Save
         uses: mikeal/publish-to-github-action@master
         env:
